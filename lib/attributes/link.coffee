@@ -1,8 +1,8 @@
 
-http = require "../http"
-client = require "../client"
+http = require "../http.coffee"
+client = require "../client.coffee"
 
-Collection = require "./collection"
+Collection = require "./collection.coffee"
 
 module.exports = class Link
   constructor: (@_link)->

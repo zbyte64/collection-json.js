@@ -1,5 +1,5 @@
 
-http = require "./http"
+http = require "./http.coffee"
 
 module.exports = (href, options, done)->
   if typeof options is 'function'
@@ -48,4 +48,4 @@ module.exports.parse = (collection, done)->
   done error, collectionObj
 
 # Expose Collection
-module.exports.Collection = require "./attributes/collection"
+module.exports.Collection = require "./attributes/collection.coffee"

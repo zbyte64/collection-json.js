@@ -18,6 +18,7 @@ build:
 build/collection-json.js: build
 	@echo "Building bare"
 	@./node_modules/browserify/bin/cmd.js \
+		-t coffeeify \
 		-i 'underscore' \
 		browser/cj.bare.coffee \
 		-o build/collection-json.js
@@ -30,6 +31,7 @@ build/collection-json.min.js: build
 build/collection-json.angular.js: build
 	@echo "Building angular"
 	@./node_modules/browserify/bin/cmd.js \
+		-t coffeeify \
 		-i 'underscore' \
 		browser/cj.angular.coffee \
 		-o build/collection-json.angular.js
@@ -42,6 +44,7 @@ build/collection-json.angular.min.js: build
 build/jquery.collection-json.js: build
 	@echo "Building jquery"
 	@./node_modules/browserify/bin/cmd.js \
+		-t coffeeify \
 		-i 'underscore' \
 		browser/cj.jquery.coffee \
 		-o build/jquery.collection-json.js

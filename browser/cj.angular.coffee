@@ -1,7 +1,7 @@
 
-http = require "../lib/http"
+http = require "../lib/http.coffee"
 angular = window.angular
-client = require "../lib/client"
+client = require "../lib/client.coffee"
 
 cj = angular.module "collection-json", []
 

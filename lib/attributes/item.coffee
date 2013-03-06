@@ -1,11 +1,11 @@
 
-_ = require "../underscore"
-http = require "../http"
-client = require "../client"
+_ = require "../underscore.coffee"
+http = require "../http.coffee"
+client = require "../client.coffee"
 
-Collection = require "./collection"
-Link = require "./link"
-Template = require "./template"
+Collection = require "./collection.coffee"
+Link = require "./link.coffee"
+Template = require "./template.coffee"
 
 module.exports = class Item
   constructor: (@_item, @_template)->
@@ -40,7 +40,7 @@ module.exports = class Item
       link.rel is rel
     return null if not link
 
-    Link = require "./link"
+    Link = require "./link.coffee"
     @_links[rel] = new Link(link) if link
     @_links[rel]
 

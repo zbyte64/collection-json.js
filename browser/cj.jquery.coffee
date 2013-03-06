@@ -1,5 +1,5 @@
 
-http = require "../lib/http"
+http = require "../lib/http.coffee"
 
 # TODO
 # http.get = (href, options={}, done=()->)->
@@ -10,5 +10,5 @@ http = require "../lib/http"
 
 # http.del = (href, options={}, done=()->)->
 
-window.CollectionJSON = require "../lib/client"
+window.CollectionJSON = require "../lib/client.coffee"
 window.CollectionJSON.http = http

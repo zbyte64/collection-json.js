@@ -1,3 +1,3 @@
 
-window.CollectionJSON = require "../lib/client"
-window.CollectionJSON.http = require "../lib/http"
+window.CollectionJSON = require "../lib/client.coffee"
+window.CollectionJSON.http = require "../lib/http.coffee"

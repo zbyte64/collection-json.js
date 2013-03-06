@@ -1,9 +1,9 @@
 
-_ = require "../underscore"
-http = require "../http"
-client = require "../client"
+_ = require "../underscore.coffee"
+http = require "../http.coffee"
+client = require "../client.coffee"
 
-Collection = require "./collection"
+Collection = require "./collection.coffee"
 
 module.exports = class Template
   constructor: (@href, @_template, @form={})->

@@ -1,6 +1,6 @@
 
 request = require "request"
-http = require "./http"
+http = require "./http.coffee"
 
 http._get = (href, options, done)->
   options.url = href
@@ -25,4 +25,4 @@ http._del = (href, options, done)->
   request.del options, (error, response)->
     done error, response
 
-module.exports = require "./client"
+module.exports = require "./client.coffee"
