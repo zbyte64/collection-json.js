@@ -59,3 +59,6 @@ client: build build/collection-json.js build/collection-json.min.js \
 				build/jquery.collection-json.js build/jquery.collection-json.min.js
 
 .PHONY: test test-acceptance client
+
+clean:
+	@rm -f build/*
