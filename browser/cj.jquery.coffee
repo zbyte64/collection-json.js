@@ -15,8 +15,7 @@ http.get = (href, options={}, done=()->)->
 http.post = (href, options={}, done=()->)->
   prep_options(options)
   options['type'] = 'post'
-  console.log(options)
-  options['data'] = ''
+  options['data'] = JSON.stringify options.body.template
   options['success'] = (data, textStatus, jqXHR)->
     done(null, data)
   $.ajax(href, options)
