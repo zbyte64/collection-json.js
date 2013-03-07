@@ -7,13 +7,13 @@ Collection = require "./collection.coffee"
 module.exports = class Link
   constructor: (@_link)->
 
-  @define "href"
+  @define "href",
     get: ->
       @_link.href
-  @define "rel"
+  @define "rel",
     get: ->
       @_link.rel
-  @define "prompt"
+  @define "prompt",
     get: ->
       @_link.prompt
 
