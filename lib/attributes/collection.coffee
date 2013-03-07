@@ -18,10 +18,10 @@ module.exports = class Collection
     @_template = null
     @error = @_collection.error
 
-  @define "href"
+  @define "href",
     get: ->
       @_collection.href
-  @define "version"
+  @define "version",
     get: ->
       @_collection.version
 
